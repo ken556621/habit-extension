@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Youtube Block Extension",
+  "description": "Youtube Block Extension",
+  "author": "Ken",
+  "version": "1.0.1",
+  "permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["background.js"]
+    }
+  ]
+}
